@@ -18,16 +18,23 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const TextInput: Story = {
+export const Text: Story = {
   args: {
     type: 'text',
     clearable: true,
   },
 };
 
-export const PasswordInput: Story = {
+export const Password: Story = {
   args: {
     type: 'password',
-    clearable: true,
+    clearable: false,
+  },
+};
+
+export const Number: Story = {
+  args: {
+    type: 'number',
+    clearable: false,
   },
 };
