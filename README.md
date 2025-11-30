@@ -9,20 +9,12 @@ But I hope, it'll be more soon ;)
 
 ```jsx
   <Input type={'text'} clearable={true} />
+```
 
-  ![image]('https://snipboard.io/uPbf7M.jpg')
-
-
-
-
-
+```jsx
   <Input type={'password'} clearable={false} />
-  ![image]('https://snipboard.io/Mi5FBD.jpg')
+```
 
-
-
-
-
+```jsx
   <Input type={'number'} clearable={true} />
-  ![image]('https://snipboard.io/mGRpZT.jpg')
 ```
