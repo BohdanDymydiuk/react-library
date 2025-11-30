@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Eye } from "./eye";
 import type { DotLottie } from "@lottiefiles/dotlottie-react";
 import { segment } from "../../constants";
+import './input.css';
 
 export interface InputProps {
   /** Input type */
@@ -42,7 +43,7 @@ export const Input: React.FC<InputProps> = ({ type = "text", clearable }) => {
   }, [visible]);
 
   return (
-    <div>
+    <div className='input-container'>
       <input
         type={visible ? "text" : type}
         value={value}
@@ -50,7 +51,7 @@ export const Input: React.FC<InputProps> = ({ type = "text", clearable }) => {
       />
       {clearable && <button onClick={clearHandler}>Clear</button>}
       {type === "password" && (
-        <button onClick={visibilityToggleHandler}>
+        <button className="eye-button" onClick={visibilityToggleHandler}>
           <Eye
             dotLottieRefCallback={(dotLottie) => {
               dotLottieRef.current = dotLottie;

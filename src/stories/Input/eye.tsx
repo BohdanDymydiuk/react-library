@@ -6,8 +6,8 @@ import { segment } from "../../constants";
 export const Eye: React.FC<DotLottieReactProps> = (props) => {
   return (
     <DotLottieReact
-      src="https://lottie.host/e3647be4-bc01-47aa-8ba5-3c5e8c9c0eb5/0Tsb7SPHDb.lottie"
-      style={{ width: "100px", height: "100px" }}
+      src="https://lottie.host/a4eeecb2-2cbf-4e19-b5ed-a97897b9298e/avauTsgtjK.lottie"
+      style={{ width: "35px", height: "35px" }}
       segment={segment.close}
       {...props}
     />
