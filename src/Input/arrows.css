@@ -1,0 +1,12 @@
+.arrow {
+  transition: background-color 0.3s;
+  border-radius: 5px;
+}
+
+.arrow:active {
+  background-color: rgba(191, 128, 99, 0.3);
+}
+
+.arrows-container :nth-child(2) .arrow {
+  transform: rotate(180deg);
+}
